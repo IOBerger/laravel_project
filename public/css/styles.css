@@ -1,0 +1,123 @@
+:root {
+    --color-text: rgb(1, 119, 109);
+    --color-a-nav: rgb(1, 119, 109);
+    --color-nav: rgba(255, 68, 0, 0.658);
+    --color-a: rgb(0, 173, 159);
+    --color-background: rgb(216, 234, 240);
+  }
+* {
+    box-sizing:border-box;
+}
+html {
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+    -moz-tab-size:4;
+    tab-size:4;
+    font-family:Raleway,sans-serif;
+    font-feature-settings:normal
+}
+body {
+    margin:0;
+    padding: 0;
+    line-height: inherit;
+    background-color: var(--color-background);
+    color:var(--color-text);
+}
+main {
+    padding: 10px 50px;
+}
+a, a:visited, a:active{
+    color: var(--color-a);
+}
+a:hover {
+    color:var(--color-text);
+}
+.nav-item {
+    position: relative;
+    display: inline-block;
+    background-color: var(--color-nav);   
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 165px;
+    text-align: center;
+}
+.nav-item, .nav-item:hover, .nav-item:active, .nav-item:visited{
+    color: var(--color-a-nav);
+}
+.nav-item-note {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 300px;
+    border-radius: 3px;
+    background-color: var(--color-nav);
+    padding: 20px 35px;
+    z-index:9999;
+}
+.nav-item:hover .nav-item-note {
+    display: block;
+}
+.main-nav {
+    background-color: var(--color-nav);
+    padding: 0px 25px;
+}
+h1 {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+h1::before {
+    content: ' ';
+    display: flex;
+    width: 10px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-nav);
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+.category-item{
+    display: inline-block;
+    margin-right: 20px;
+}
+ul{
+    margin: 0;
+    padding:0;
+}
+.go, .login, .type-title, option, select{
+    border: 1px solid var(--color-nav);
+    background: rgba(255, 255, 255, 0.848);
+    width: 300px;
+    margin: 10px;
+    padding:10px;
+    color:var(--color-text);
+}
+.textfield{
+    border: 1px solid var(--color-nav);
+    background: rgba(255, 255, 255, 0.848);
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding:10px;
+    color:var(--color-text);
+}
+label{
+    display: block;
+}
+svg{
+    width: 15px;
+    height: 15px;
+}
+.pag-item{
+    display:inline-block;
+}
